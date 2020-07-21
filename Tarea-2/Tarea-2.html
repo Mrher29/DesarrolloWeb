@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript & CSS</title>
+
+    <style>
+        body{
+            background-color:green;
+        }
+        h1{
+            font-size: 25px;
+            color: white;
+            font-style: italic;
+           
+        }
+        p{
+            color:red;
+            font-size: 18px;
+        }
+        div{
+            background-color: white;
+            
+        }
+        
+    </style>
+</head>
+<body>
+
+    <center><h1>Prueba JavaScript</h1></center>
+    <div>
+        <center><p>Esta prueba es para ver funcionamiento de estructuras case.</p></center>
+    </div>
+    
+    <script>
+        var codigo, menu; 
+        menu="Menu\n\n";
+        menu+="1.Invierno\n";
+        menu+="2.Verano\n";
+        menu+="3.Primavera\n";
+        menu+="4.Otoño\n";
+        menu+="Ingrese codigo";
+        codigo = parseInt(prompt(menu));
+        switch(codigo){
+            case 1: document.write("Invierno");
+                    break;
+            case 2: document.write("Verano");
+                    break;
+            case 3: document.write("Primavera");
+                    break;
+            case 4: document.write("Otoño");
+                    break;
+            default:document.write("No existe");
+        }
+
+    </script>
+</body>
+</html>
