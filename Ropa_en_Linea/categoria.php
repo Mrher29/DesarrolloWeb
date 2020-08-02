@@ -26,7 +26,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 </div>
-            <?php session_unset(); } ?>
+            <?php /*session_destroy();*/ } ?>
 
                 <div class="card card-body">
                     <h1>Categorías</h1>
@@ -78,3 +78,4 @@
 
 <?php include("Includes/footer.php")  
 ?>
+

@@ -24,7 +24,7 @@
 
         $_SESSION['message'] = 'Tarea actualizada';
         $_SESSION['message_type'] = 'warning';
-        header("Location: index.php");
+        header("Location: categoria.php");
 
     }
 

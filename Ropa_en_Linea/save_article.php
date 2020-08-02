@@ -12,8 +12,18 @@ if(isset($_POST['save_article'])){
     $categoria = $_POST['categoria'];
     $cantidad = $_POST['cantidad'];
 
-    $query = "INSERT INTO articulo (articulo, precio, color, talla, categoria, cantidad) VALUES ('$articulo','$precio','$color','$talla','$categoria','$cantidad')";
+    $target = "uploads/".basename($_FILES['foto']['name']);
+    $imagen = $_FILES['foto']['name'];
+
+	$query = "INSERT INTO articulo (articulo, precio, color, talla, categoria, cantidad, foto) VALUES ('$articulo','$precio','$color','$talla','$categoria','$cantidad','$imagen')";
     $result = mysqli_query($conn, $query);
+    
+    if(copy($_FILES['foto']['tmp_name'],$target)){
+        die("Se guardó la imagen");
+    }else{       
+        die("No se pudo guardar la imagen");
+    }
+
     if(!$result){
         die("Falló la consulta");
     }
@@ -21,6 +31,7 @@ if(isset($_POST['save_article'])){
     $_SESSION['message'] = 'Se guardó el artículo';
     $_SESSION['message_type'] = 'success';
     header("Location: articulos.php");
+    
 }
 
 ?>

@@ -1,6 +1,8 @@
 <?php
 
 //sesión de mensajes
+    
+
 session_start();
 
 $conn = mysqli_connect(

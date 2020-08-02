@@ -1,8 +1,6 @@
 <?php include("Includes/loginHeader.php")?>
 <?php include("db.php")?>
-<?php if(!isset($_SESSION['user_id'])){
-        header("Location: login.php");
-    }?>
+
 
     <center>
     <h1>Registrarse</h1> <br>
@@ -19,6 +17,7 @@
                     <div class="form-group">
                         <input type="password" name="confirm_password" placeholder="Confirmar contraseña" class="form-control">
                     </div><br>
+                    
                     <input type="submit" value="Auntenticarse" class="btn btn-success btn-block" name="save_user">
                 </form>
         </div>
@@ -31,7 +30,7 @@
         $email = $_POST['email'];
         $password =  $_POST['password'];
         $cPassword = $_POST['confirm_password'];
-        $query = "INSERT INTO users (email, password) values ('$email', '$password')";
+        $query = "INSERT INTO users (email, password) values ('$email', md5('$password'))";
 
         if($password != $cPassword){
             die('Las contraseñas no coinciden');

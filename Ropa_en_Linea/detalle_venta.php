@@ -67,7 +67,18 @@
                             <tr>
                                
                                 <td><?php echo $row['venta'] ?></td>
-                                <td><?php echo $row['articulo'] ?></td>
+                                <td><?php 
+                                    $idfoto = $row["articulo"];
+                                    $imaSelect = "SELECT foto FROM articulo WHERE id = '$idfoto'";
+                                    $resulta = mysqli_query($conn, $imaSelect);
+                                    while($fila = mysqli_fetch_array($resulta)){
+                                        echo "<div id='img_div'>";
+                                            echo "<img height='100' width='100' src='uploads/".$fila['foto']."'>"; 
+                                        echo "</div>";
+
+                                    }
+                                
+                                ?></td>
                                 <td><?php echo $row['cantidad'] ?></td>
                                 <td><?php echo $row['subtotal'] ?></td>
                                 <td>

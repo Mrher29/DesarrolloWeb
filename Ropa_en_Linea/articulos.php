@@ -22,7 +22,7 @@
                 <span aria-hidden="true">&times;</span>
             </button>
             </div>
-            <?php session_unset(); } ?>
+            <?php /*session_unset();*/ } ?>
 
             <div class="card card-body">
 
@@ -35,7 +35,7 @@
                     $result = mysqli_query($conn, $query);
 
                     ?>
-                <form action="save_article.php" method="post">
+                <form action="save_article.php" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <input type="text" name="articulo" class="form-control" placeholder="Artículo" autofocus>
                     </div>
@@ -58,6 +58,9 @@
                         <option value="<?php echo $row[0];?>"><?php echo $row[1];?></option>
                         <?php endwhile; ?>
                     </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="file" name="foto" id="foto" class="form-control">
                     </div>
                     <input type="submit" value="Guardar artículo" class="btn btn-success btn-block" name="save_article">
 
