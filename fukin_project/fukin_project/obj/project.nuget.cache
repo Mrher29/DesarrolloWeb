@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ptPu4gmb0aneh/4Aa0unNHXj097F/pt6DFxyevEblvEcQ2YC03dmMhNb2H8du22HdCsMuypX1VKaPQ+tSAxEIA==",
+  "dgSpecHash": "Zvb54USDpW79AhXDX7apLULz5Fna1qrFDc9+WT5AjMzx5yzDjfOzi8rutjJpWsIy9WUZxOXZXNp4OwjTNyyDsw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ARCANET\\source\\repos\\fukin_project\\fukin_project\\fukin_project.csproj",
+  "projectFilePath": "C:\\Users\\ARCANET\\Desktop\\appnotas\\DesarrolloWeb\\fukin_project\\fukin_project\\Proyecto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ARCANET\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.8\\microsoft.aspnetcore.cryptography.internal.3.1.8.nupkg.sha512",
     "C:\\Users\\ARCANET\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.8\\microsoft.aspnetcore.cryptography.keyderivation.3.1.8.nupkg.sha512",

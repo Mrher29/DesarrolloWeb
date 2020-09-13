@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ARCANET\\source\\repos\\fukin_project\\fukin_project\\fukin_project.csproj": {}
+    "C:\\Users\\ARCANET\\Desktop\\appnotas\\DesarrolloWeb\\fukin_project\\fukin_project\\fukin_project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ARCANET\\source\\repos\\fukin_project\\fukin_project\\fukin_project.csproj": {
+    "C:\\Users\\ARCANET\\Desktop\\appnotas\\DesarrolloWeb\\fukin_project\\fukin_project\\fukin_project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ARCANET\\source\\repos\\fukin_project\\fukin_project\\fukin_project.csproj",
+        "projectUniqueName": "C:\\Users\\ARCANET\\Desktop\\appnotas\\DesarrolloWeb\\fukin_project\\fukin_project\\fukin_project.csproj",
         "projectName": "fukin_project",
-        "projectPath": "C:\\Users\\ARCANET\\source\\repos\\fukin_project\\fukin_project\\fukin_project.csproj",
+        "projectPath": "C:\\Users\\ARCANET\\Desktop\\appnotas\\DesarrolloWeb\\fukin_project\\fukin_project\\fukin_project.csproj",
         "packagesPath": "C:\\Users\\ARCANET\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ARCANET\\source\\repos\\fukin_project\\fukin_project\\obj\\",
+        "outputPath": "C:\\Users\\ARCANET\\Desktop\\appnotas\\DesarrolloWeb\\fukin_project\\fukin_project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

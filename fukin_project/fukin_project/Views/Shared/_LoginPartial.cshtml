@@ -1,0 +1,41 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using fukin_project.Areas.Identity.Data
+
+@inject SignInManager<fukin_projectUser> SignInManager
+@inject UserManager<fukin_projectUser> UserManager
+
+    <ul class="navbar-nav">
+        @if (SignInManager.IsSignedIn(User))
+        {
+
+            <li class="nav-item">
+                <a class="navbar-brand" asp-area="" asp-controller="Categorias" asp-action="Index">Categorias</a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-brand" asp-area="" asp-controller="Medicamentoes" asp-action="Index">Medicamentos</a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-brand" asp-area="" asp-controller="Medicos" asp-action="Index">Medicos</a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-brand" asp-area="" asp-controller="Pacientes" asp-action="Index">Pacientes</a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-brand" asp-area="" asp-controller="Recetas" asp-action="Index">Recetas</a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-brand" asp-area="" asp-controller="Citas" asp-action="Index">Citas</a>
+            </li>
+
+            <li class="nav-item">
+                <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+            </li>
+
+            <li class="nav-item">
+                <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                    <button id="logout" type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+                </form>
+            </li>
+        }
+
+    </ul>
