@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+	<title>Categoría nueva</title>
+</h:head>
+ 
+<h:body>
+<a href="index.xhtml">Regresar a menu</a>
+<h:form>
+     <table>
+      
+       <tr>
+       	  <td>Categoría:</td>
+          <td>
+            <h:inputText value="#{categoriaControl.categoria.categoria}" />
+          </td>    
+       </tr>
+     
+       
+       
+     </table>
+     <h:commandButton value="Guardar" action="#{categoriaControl.guardar}"/>
+  </h:form>
+</h:body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+	<title>Material Nuevo</title>
+</h:head>
+ 
+<h:body>
+<a href="index.xhtml">Regresar a menu</a>
+<h:form>
+     <table>
+      
+       <tr>
+       	  <td>Cantidad:</td>
+          <td>
+            <h:inputText value="#{ventaControl.salida.cantidad}" />
+          </td>    
+       </tr>      
+       <tr>
+       	  <td>Cliente:</td>
+          <td>
+            <h:inputText value="#{ventaControl.salida.persona}" />
+          </td>    
+       </tr>
+       <tr>
+       	  <td>Producto:</td>
+          <td>
+            <h:inputText value="#{ventaControl.salida.producto}" />
+          </td>    
+       </tr>
+       
+       
+     </table>
+     <h:commandButton value="Guardar" action="#{ventaControl.guardar}"/>
+  </h:form>
+</h:body>
+</html>
